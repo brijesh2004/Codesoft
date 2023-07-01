@@ -1,0 +1,297 @@
+
+body{
+    background: black;
+    scroll-behavior: smooth;
+}
+#img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.checked {
+    color: orange;
+   /* height: 200px; */
+    align-items: center;
+    /* border: 2px solid rgb(150, 131, 131);
+   box-shadow: 5px 5px 5px rgb(189, 154, 154); */
+}
+#hero{
+    width: 200px;
+    height: 200px;
+    border: 2px solid gray;
+}
+.about{
+    background-color:black;
+    color: rgb(185, 171, 171);
+  
+}
+.about:hover{
+    background-color: rgb(7, 6, 6);
+    color: white;
+}
+#navbar{
+    background-color: rgb(251, 249, 249);
+}
+
+.p{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.education{
+    background-color: black;
+    color: white;
+}
+.highschool{
+    border: 2px solid whitesmoke;
+    text-align: center;
+   
+}
+.boardlogoimg{
+    border-radius: 50%;
+}
+.skills{
+    background: black;
+
+}
+.skill{
+  color:white;
+}
+.card{
+border: 2px solid red;
+}
+.card:hover{
+    background: rgb(101, 254, 36);
+}
+
+a{
+    text-decoration:none;
+}
+.contect{
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
+.button{
+    box-shadow:5px 5px 5px rgb(54, 54, 54);
+    background: #000;
+    color: white;
+}
+.button:hover{
+    box-shadow:5px 5px 5px rgb(23, 90, 223);
+    background-color: rgb(245, 237, 4);
+    animation: btn1 3s infinite linear;
+}
+@keyframes btn1{
+    from{
+        width: 80px;
+        height:40px;
+    }
+    to {
+        width: 80px;
+        height:40px;
+    }
+}
+.img{
+    height: 100px;
+    width: 100px;
+    
+}
+.imgcenter{
+    align-items: center;
+    text-align: center;
+}
+.hakerrank{
+    width:30vw;
+    height: 30vh;
+}
+#upper{
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   z-index: 50;
+}
+#lower{
+   position: fixed;
+   bottom: 0;
+   right: 50px;
+   z-index: 50;
+}
+.imgskill{
+   color: white;
+    display: flex;
+    text-align: center;
+}
+.fourinline{
+    color: white;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+.visit{
+    color: white;
+}
+.html{
+    color: white;
+    /* margin-left: 10px; */
+border:2px solid goldenrod;
+box-shadow: 5px 5px 5px goldenrod;
+text-align: center;
+margin: 40px;
+background-color: #020019;
+color: white;
+}
+.html img{
+    width: 100px;
+    height: 100px;
+}
+.html p{
+    margin: auto;
+}
+.html:hover{
+    background-color: rgb(225, 55, 255);
+    /* margin-top: -5px; */
+    scale: 1.1;
+    border-radius: 10px;
+    /* height: 160px; */
+}
+
+@media  (max-width:800px){
+    .fourinline{
+   display: flex;
+   flex-direction: column;
+    }
+    .imgskill{
+        display: flex;
+        text-align: center;
+        position: relative;
+        justify-content: center;
+    }
+    .html img{
+        width: 120px;
+        height: 120px;
+    }
+
+}
+
+
+
+/* project section start from here */
+.project{
+    background-color: black;
+    color: white;
+}
+
+.projectfront{
+    /* margin-left: 10px; */
+    width: 200px;
+border:2px solid goldenrod;
+box-shadow: 5px 5px 5px goldenrod;
+text-align: center;
+margin: 40px;
+background: rgb(24, 0, 24);
+}
+.projectfront:hover{
+    background-color: rgb(25, 29, 29);
+   /* height: 170px;
+    margin-top: -5px; */
+    scale: 1.1;
+    border-radius: 5px;
+}
+.projectfront img{
+    width: 100%;
+    height: 120px;
+}
+.projectfront p{
+    color: white;
+}
+@media (max-width:800px){
+    .projectfront img{
+        width: 100%;
+        height: 120px;
+    }
+    .projectfront:hover{
+        background-color:  rgb(25, 29, 29);
+        /* height: 170px; */
+         margin-top: -5px;
+    }
+}
+
+.pbtn{
+    border: 1px solid white;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg ,rgb(45, 45, 164) , rgb(42, 39, 39) , rgb(110, 60, 60));
+    color: white;
+    width: 80px;
+    height: 35px;
+    transition: 1s;
+    cursor: pointer;
+}
+.pbtn:hover{
+    background-image: linear-gradient(90deg , rgb(162, 162, 23) , rgb(71, 116, 71) , rgb(255, 0, 255));
+    border-radius: 40px;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Backend project start  */
+
+.backendProject{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: center;
+}
+
+@media (max-width:435px){
+.html{
+    margin: 20px;
+}
+.projectfront{
+    margin: 20px;
+}
+}
+@media (max-width:350px){
+    .html{
+        margin: 15px;
+    }
+    .projectfront{
+        margin: 15px;
+    }
+    }
+    @media (max-width:330px){
+        .html{
+            margin: 10px;
+        }
+        .projectfront{
+            margin: 10px;
+        }
+        }
+
+/* contect section start from header */
+
+.contect{
+    background-color:black ;
+}
+
+.btn{
+    width: 100px;
+}
+
+.contactme{
+    display: flex;
+    justify-content: space-around;
+
+}
+.created{
+    margin-top: 25px;
+}
+.line{
+ background: linear-gradient(green,yellowgreen);
+ width: 200px;
+ height: 5px;
+ border-radius: 20px;
+}
